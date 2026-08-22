@@ -3,6 +3,7 @@ import { ArrowUpRight, Circle, Cpu, Database, Code2, FileText, Boxes } from "luc
 
 import { SiteNav } from "@/components/SiteNav";
 import { Reveal } from "@/components/Reveal";
+import { ResumeButton } from "@/components/ResumeButton";
 import profileImg from "@/assets/profile-placeholder.jpg";
 import projectImg from "@/assets/noise-monitor.jpg";
 
