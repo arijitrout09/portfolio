@@ -112,64 +112,78 @@ function Index() {
               </span>
             </Reveal>
 
-            <div className="relative mt-8 grid items-end gap-8 md:mt-4 md:grid-cols-12">
-              <Reveal delay={80} className="md:col-span-7 md:pb-6">
-                <p className="display text-5xl italic leading-[0.95] sm:text-7xl lg:text-8xl">
-                  Hello, I&apos;m Arijit.
+            <div className="relative mt-10 md:mt-6">
+              {/* editorial serif line — portrait overlaps it on desktop */}
+              <Reveal delay={60}>
+                <p className="display flex flex-col text-6xl italic leading-[0.9] sm:text-8xl md:flex-row md:items-baseline md:justify-between lg:text-[9rem]">
+                  <span>Hello,</span>
+                  <span className="self-end md:self-auto">I&apos;m Arijit.</span>
                 </p>
-                <h1 className="mt-4 text-[13vw] leading-[0.85] font-black tracking-tight uppercase sm:text-7xl lg:text-[5.6rem]">
-                  B.Tech CSE
-                  <br />
-                  Student
-                </h1>
-                <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-                  A second-year Computer Science student at Lovely Professional University,
-                  interested in programming, software engineering, web technologies and building
-                  practical technology projects.
-                </p>
-                <div className="mt-8 flex flex-wrap gap-3">
-                  <a
-                    href="#projects"
-                    className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
-                  >
-                    View My Work <ArrowUpRight className="h-4 w-4" />
-                  </a>
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center gap-2 rounded-full border border-foreground/25 px-7 py-4 text-sm font-semibold transition-colors duration-300 hover:bg-secondary"
-                  >
-                    Get In Touch
-                  </a>
-                </div>
               </Reveal>
 
-              <Reveal delay={160} className="md:col-span-5">
-                <figure className="relative">
+              {/* portrait */}
+              <Reveal
+                delay={140}
+                className="relative z-10 mx-auto mt-6 w-full max-w-sm md:absolute md:inset-x-0 md:top-8 md:mt-0 md:w-[30%] md:max-w-none"
+              >
+                <figure className="relative mx-auto">
                   <img
                     src={profileImg}
                     width={1024}
                     height={1280}
                     alt="Placeholder portrait to be replaced with a professional photo of Arijit Rout"
-                    className="w-full rounded-[2rem] object-cover shadow-[0_30px_80px_-40px_oklch(0.16_0.008_60/0.5)]"
+                    className="w-full rounded-[2rem] object-cover shadow-[0_40px_90px_-45px_oklch(0.16_0.008_60/0.55)]"
                   />
-                  <figcaption className="mono-label absolute bottom-4 left-4 rounded-full bg-background/90 px-3 py-1.5 backdrop-blur">
+                  <figcaption className="mono-label absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-background/90 px-3 py-1.5 whitespace-nowrap backdrop-blur">
                     profile_photo — placeholder
                   </figcaption>
                 </figure>
               </Reveal>
 
-              <div className="md:col-span-12 md:-mt-2">
-                <Reveal delay={220} className="text-right">
-                  <p className="text-3xl leading-[0.9] font-black uppercase sm:text-5xl lg:text-6xl">
-                    Aspiring
+              <div className="relative mt-10 grid items-end gap-8 md:mt-16 md:grid-cols-12 md:gap-6">
+                <Reveal delay={200} className="md:col-span-5">
+                  <h1 className="text-[16vw] leading-[0.82] font-black tracking-tight uppercase sm:text-8xl lg:text-[7rem]">
+                    I am
                     <br />
-                    Software
+                    Arijit
+                  </h1>
+                </Reveal>
+
+                <div className="md:col-span-3" aria-hidden />
+
+                <Reveal delay={260} className="md:col-span-4 md:text-right">
+                  <p className="ml-auto max-w-xs text-sm leading-relaxed text-muted-foreground">
+                    Second-year Computer Science student at Lovely Professional University —
+                    programming, software engineering, web technologies and practical projects.
+                  </p>
+                  <p className="mt-6 text-3xl leading-[0.9] font-black uppercase sm:text-4xl lg:text-5xl">
+                    B.Tech CSE
+                    <br />
+                    Student &amp;
+                    <br />
+                    Aspiring Software
                     <br />
                     Engineer
                   </p>
                 </Reveal>
               </div>
+
+              <Reveal delay={320} className="mt-10 flex flex-wrap gap-3">
+                <a
+                  href="#projects"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
+                >
+                  View My Work <ArrowUpRight className="h-4 w-4" />
+                </a>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center gap-2 rounded-full border border-foreground/25 px-7 py-4 text-sm font-semibold transition-colors duration-300 hover:bg-secondary"
+                >
+                  Get In Touch
+                </a>
+              </Reveal>
             </div>
+
           </div>
         </section>
 
