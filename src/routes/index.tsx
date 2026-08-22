@@ -181,6 +181,7 @@ function Index() {
                 >
                   Get In Touch
                 </a>
+                <ResumeButton />
               </Reveal>
             </div>
 
