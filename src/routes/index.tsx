@@ -427,6 +427,9 @@ function Index() {
                 Have an opportunity, project idea, or simply want to connect? Feel free to reach
                 out.
               </p>
+              <div className="mt-8">
+                <ResumeButton />
+              </div>
             </Reveal>
 
             <ul className="mt-12 border-t border-border">
