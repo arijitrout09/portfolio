@@ -4,7 +4,7 @@ import { ArrowUpRight, Circle, Cpu, Database, Code2, FileText, Boxes } from "luc
 import { SiteNav } from "@/components/SiteNav";
 import { Reveal } from "@/components/Reveal";
 import { ResumeButton } from "@/components/ResumeButton";
-import profileImg from "@/assets/arijit-profile.png.asset.json";
+import profileImg from "@/assets/arijit-profile-cropped.png";
 import projectImg from "@/assets/noise-monitor.jpg";
 
 export const Route = createFileRoute("/")({
