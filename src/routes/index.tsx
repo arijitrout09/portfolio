@@ -129,7 +129,7 @@ function Index() {
               >
                 <figure className="relative mx-auto">
                   <img
-                    src={profileImg.url}
+                    src={profileImg}
                     width={1024}
                     height={1280}
                     alt="Professional portrait of Arijit Rout, a second-year B.Tech CSE student at Lovely Professional University"
