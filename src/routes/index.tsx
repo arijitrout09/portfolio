@@ -86,10 +86,10 @@ const exploring = [
 ];
 
 const contacts = [
-  { label: "Email", value: "[Your Email]", href: "#" },
-  { label: "Phone", value: "[Your Phone]", href: "#" },
-  { label: "LinkedIn", value: "[LinkedIn Profile]", href: "#" },
-  { label: "GitHub", value: "[GitHub Profile]", href: "#" },
+  { label: "Email", value: "routm7937@gmail.com", href: "mailto:routm7937@gmail.com" },
+  { label: "Phone", value: "7061710713", href: "tel:+917061710713" },
+  { label: "LinkedIn", value: "Arijit Rout - LinkedIn", href: "#" },
+  { label: "GitHub", value: "Arijit Rout - Github", href: "#" },
 ];
 
 function Index() {
