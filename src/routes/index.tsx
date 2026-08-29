@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Circle, Cpu, Database, Code2, Boxes } from "lucide-react";
+import { ArrowUpRight, Circle, Cpu, Database, Code2, FileText, Boxes } from "lucide-react";
 
 import { SiteNav } from "@/components/SiteNav";
 import { Reveal } from "@/components/Reveal";
