@@ -86,7 +86,7 @@ const exploring = [
 ];
 
 const contacts = [
-  { label: "Email", value: "routm7937@gmail.com", href: "mailto:routm7937@gmail.com" },
+  { label: "Email", value: "routm7937@gmail.com", href: "https://mail.google.com/mail/?view=cm&to=routm7937@gmail.com" },
   { label: "Phone", value: "7061710713", href: "tel:+917061710713" },
   { label: "LinkedIn", value: "Arijit Rout - LinkedIn", href: "#" },
   { label: "GitHub", value: "Arijit Rout - Github", href: "#" },
