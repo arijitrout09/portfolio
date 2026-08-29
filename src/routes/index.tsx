@@ -4,7 +4,7 @@ import { ArrowUpRight, Circle, Cpu, Database, Code2, FileText, Boxes } from "luc
 import { SiteNav } from "@/components/SiteNav";
 import { Reveal } from "@/components/Reveal";
 import { ResumeButton } from "@/components/ResumeButton";
-import profileImg from "@/assets/profile-placeholder.jpg";
+import profileImg from "@/assets/arijit-profile.png.asset.json";
 import projectImg from "@/assets/noise-monitor.jpg";
 
 export const Route = createFileRoute("/")({
@@ -129,15 +129,12 @@ function Index() {
               >
                 <figure className="relative mx-auto">
                   <img
-                    src={profileImg}
+                    src={profileImg.url}
                     width={1024}
                     height={1280}
-                    alt="Placeholder portrait to be replaced with a professional photo of Arijit Rout"
+                    alt="Professional portrait of Arijit Rout, a second-year B.Tech CSE student at Lovely Professional University"
                     className="w-full rounded-[2rem] object-cover shadow-[0_40px_90px_-45px_oklch(0.16_0.008_60/0.55)]"
                   />
-                  <figcaption className="mono-label absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-background/90 px-3 py-1.5 whitespace-nowrap backdrop-blur">
-                    profile_photo — placeholder
-                  </figcaption>
                 </figure>
               </Reveal>
 
