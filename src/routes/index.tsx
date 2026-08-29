@@ -1,9 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight, Circle, Cpu, Database, Code2, FileText, Boxes } from "lucide-react";
+import { ArrowUpRight, Circle, Cpu, Database, Code2, Boxes } from "lucide-react";
 
 import { SiteNav } from "@/components/SiteNav";
 import { Reveal } from "@/components/Reveal";
 import { ResumeButton } from "@/components/ResumeButton";
+import { ProjectDetail } from "@/components/ProjectDetail";
 import profileImg from "@/assets/arijit-profile.png.asset.json";
 import projectImg from "@/assets/noise-monitor.jpg";
 
