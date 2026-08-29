@@ -4,7 +4,7 @@ import { ArrowUpRight, Circle, Cpu, Database, Code2, FileText, Boxes } from "luc
 import { SiteNav } from "@/components/SiteNav";
 import { Reveal } from "@/components/Reveal";
 import { ResumeButton } from "@/components/ResumeButton";
-import profileImg from "@/assets/arijit-profile-cropped.png";
+import profileImg from "@/assets/arijit-profile.png.asset.json";
 import projectImg from "@/assets/noise-monitor.jpg";
 
 export const Route = createFileRoute("/")({
@@ -127,13 +127,13 @@ function Index() {
                 delay={140}
                 className="relative z-10 mx-auto mt-6 w-full max-w-sm md:absolute md:inset-x-0 md:top-8 md:mt-0 md:w-[30%] md:max-w-none"
               >
-                <figure className="relative mx-auto">
+                <figure className="relative mx-auto aspect-square w-full overflow-hidden rounded-full border-4 border-background shadow-[0_40px_90px_-45px_oklch(0.16_0.008_60/0.55)]">
                   <img
-                    src={profileImg}
+                    src={profileImg.url}
                     width={1024}
-                    height={1280}
+                    height={1024}
                     alt="Professional portrait of Arijit Rout, a second-year B.Tech CSE student at Lovely Professional University"
-                    className="w-full rounded-[2rem] object-cover shadow-[0_40px_90px_-45px_oklch(0.16_0.008_60/0.55)]"
+                    className="h-full w-full object-cover"
                   />
                 </figure>
               </Reveal>
