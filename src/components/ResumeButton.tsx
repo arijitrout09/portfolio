@@ -8,33 +8,27 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import resumeAsset from "@/assets/arijit-resume.pdf.asset.json";
 
-/**
- * EDITABLE PLACEHOLDER — replace with the real résumé file URL
- * (e.g. "/arijit-rout-resume.pdf" or a Google Drive / Dropbox link).
- */
-export const RESUME_URL = "#resume-placeholder";
-const RESUME_IS_PLACEHOLDER = RESUME_URL.startsWith("#");
+export const RESUME_URL = resumeAsset.url;
 
 const resume = {
   name: "Arijit Rout",
   role: "B.Tech CSE Student & Aspiring Software Engineer",
-  location: "Lovely Professional University, Punjab, India",
-  summary:
-    "Second-year Computer Science and Engineering student building practical skills in programming, web technologies, databases and software engineering documentation.",
+  location: "Lovely Professional University, Phagwara, Punjab",
+  contact: "routm7937@gmail.com · +91-7061710713",
+  links: "LinkedIn: Arijit Rout · GitHub: Arijit Rout",
   sections: [
     {
-      title: "Education",
+      title: "Skills",
       items: [
+        { heading: "Languages", meta: "Python · C · SQL · C++", body: "" },
+        { heading: "Technologies", meta: "HTML · CSS", body: "" },
+        { heading: "Databases / Tools", meta: "MySQL · Git · GitHub · Figma", body: "" },
         {
-          heading: "B.Tech — Computer Science & Engineering",
-          meta: "Lovely Professional University · 2025 — Present",
-          body: "Currently in 2nd year.",
-        },
-        {
-          heading: "Intermediate / School Education",
-          meta: "DAV Public School · Completed 2025",
-          body: "Completed intermediate education in 2025.",
+          heading: "Soft Skills",
+          meta: "Fast Learner · Team Work · Time Management",
+          body: "",
         },
       ],
     },
@@ -42,44 +36,58 @@ const resume = {
       title: "Projects",
       items: [
         {
-          heading: "Automatic Noise Monitoring System",
-          meta: "Arduino Uno · ESP32 · Sound sensor · Display · LED indicator",
-          body: "Monitors environmental sound levels in real time, visualises the readings on a display/graph and triggers an LED alert when noise crosses a set threshold.",
+          heading: "Automatic Noise Monitoring System — ECE Project",
+          meta: "Arduino Uno · ESP32 · Sound Sensor · Display · LED Indicator · Oct 2025 — Dec 2026",
+          body: "Real-time environmental noise monitoring system that continuously captures surrounding sound levels, presents the measured information visually through a display/graph, and activates a visual LED alert when the noise level becomes too high.",
         },
       ],
     },
     {
-      title: "Skills",
+      title: "Training",
       items: [
         {
-          heading: "Programming & Development",
-          meta: "Python · C · HTML · CSS",
+          heading: "C Programming Training — Certificate",
+          meta: "iamneo platform · Semester 2 · Jun 2025 — Jul 2025",
+          body: "Built a strong foundation in procedural programming: variables, data types, operators, conditionals, loops, functions, arrays, strings, pointers, and structures. Strengthened debugging, algorithmic reasoning, and structured problem-solving through regular coding exercises.",
+        },
+      ],
+    },
+    {
+      title: "Certificates",
+      items: [
+        {
+          heading: "Community Development Project",
+          meta: "Times Foundation × Lovely Professional University · 15 Aug 2026",
           body: "",
         },
-        { heading: "Database", meta: "SQL", body: "" },
         {
-          heading: "Software Engineering",
-          meta: "SRS documentation · Requirements analysis · Structured documentation",
+          heading: "Computer Programming — 150 Hours",
+          meta: "iamneo · 21 May 2026",
+          body: "",
+        },
+        {
+          heading: "Master Your Leadership Effectiveness Skills",
+          meta: "LinkedIn Learning · 31 Oct 2025",
           body: "",
         },
       ],
     },
     {
-      title: "Experience & Learning",
+      title: "Education",
       items: [
         {
-          heading: "Academic projects and self-directed learning",
-          meta: "No formal work experience yet",
-          body: "Hands-on experimentation with hardware and programming, writing software requirement specifications, and continuous learning as a CSE student.",
+          heading: "B.Tech — Computer Science & Engineering · CGPA: 8.2",
+          meta: "Lovely Professional University, Phagwara, Punjab · Aug 2026 — Present",
+          body: "",
         },
-      ],
-    },
-    {
-      title: "Contact",
-      items: [
         {
-          heading: "[Your Email] · [Your Phone]",
-          meta: "[LinkedIn Profile] · [GitHub Profile]",
+          heading: "Higher Secondary Education · 84.4%",
+          meta: "Sai Vidya Mandir, Baripada, Odisha · May 2023 — Mar 2025",
+          body: "",
+        },
+        {
+          heading: "Secondary Education · 88.8%",
+          meta: "DAV Public School, Baharagora, Jharkhand · Jun 2022 — Mar 2023",
           body: "",
         },
       ],
@@ -113,7 +121,11 @@ export function ResumeButton({ className = "" }: { className?: string }) {
             </DialogDescription>
           </DialogHeader>
 
-          <p className="text-sm leading-relaxed text-muted-foreground">{resume.summary}</p>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            {resume.contact}
+            <br />
+            {resume.links}
+          </p>
 
           <div className="mt-2 space-y-8">
             {resume.sections.map((section) => (
@@ -141,15 +153,14 @@ export function ResumeButton({ className = "" }: { className?: string }) {
           <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-border pt-6">
             <a
               href={RESUME_URL}
-              download
+              download="Arijit_Rout_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
             >
               <Download className="h-4 w-4" aria-hidden />
               Download Resume
             </a>
-            {RESUME_IS_PLACEHOLDER ? (
-              <span className="mono-label">link placeholder — add resume file URL</span>
-            ) : null}
           </div>
         </DialogContent>
       </Dialog>
