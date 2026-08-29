@@ -321,12 +321,7 @@ function Index() {
                       )}
                     </div>
                   </div>
-                  <a
-                    href="#contact"
-                    className="mt-9 inline-flex w-fit items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
-                  >
-                    Explore Project <ArrowUpRight className="h-4 w-4" />
-                  </a>
+                  <ProjectDetail className="mt-9" />
                 </div>
               </article>
             </Reveal>
