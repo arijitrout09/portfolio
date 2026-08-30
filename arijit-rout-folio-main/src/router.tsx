@@ -7,7 +7,7 @@ export const getRouter = () => {
 
   const router = createRouter({
     routeTree,
-    basepath: "/arijit-rout-folio/",
+    basepath: "/portfolio/",
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,

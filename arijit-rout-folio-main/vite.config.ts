@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 
 export default defineConfig({
-  base: "/arijit-rout-folio/",
+  base: "/portfolio/",
   plugins: [
     TanStackRouterVite(),
     react(),

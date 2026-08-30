@@ -151,7 +151,7 @@ const contacts = [
   { label: "Email", value: "routm7937@gmail.com", href: "https://mail.google.com/mail/?view=cm&to=routm7937@gmail.com" },
   { label: "Phone", value: "7061710713", href: "tel:+917061710713" },
   { label: "LinkedIn", value: "Arijit Rout - LinkedIn", href: "https://www.linkedin.com/in/arijit-rout-a104b5380/" },
-  { label: "GitHub", value: "Arijit Rout - Github", href: "https://github.com/arijit28580-bot" },
+  { label: "GitHub", value: "Arijit Rout - Github", href: "https://github.com/arijitrout09" },
 ];
 
 function Index() {
@@ -256,7 +256,7 @@ function Index() {
                     <Mail className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://github.com/arijit28580-bot"
+                    href="https://github.com/arijitrout09"
                     target="_blank"
                     rel="noreferrer"
                     className="flex h-[52px] w-[52px] items-center justify-center rounded-full border border-foreground/25 bg-background transition-all duration-300 hover:-translate-y-0.5 hover:border-foreground hover:bg-foreground hover:text-background hover:shadow-[0_0_15px_rgba(150,150,150,0.5)]"
